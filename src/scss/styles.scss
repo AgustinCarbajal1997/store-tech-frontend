@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    background-color: whitesmoke;
+    color: #353535;
+}
+
+.main {
+    background-color: rgb(245, 245, 245);
+    color: #353535;
+}
+h1 h2 h3 h4 h5 h6{
+    color: #353535
+}
+
+@import "header";
+@import "auth";
+@import "banner";
+@import "profile";
+@import "carouselOptions";
+@import "carouselSalesOff";
+@import "carouselDelivery";
+@import "carouselHighlights";
+@import "productsList";
+@import "productsView";
+@import "loading";
+@import "breadcrumb";
+@import "comparisonPage";
+@import "cart";
+@import "purchases";
+@import "signupForm";
+@import "paymentInfo";
+@import "pagination";
+@import "splash";

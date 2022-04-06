@@ -1,0 +1,86 @@
+/* CAROUSEL PROMOCIONES */
+
+.slider {
+    width: 100%;
+    height: 140px;
+    position: relative;
+
+    .slide {
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .5s ease-in-out;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .isActiveSlider {
+        visibility: visible;
+        /* filter: brightness(1); */
+        opacity: 1;
+    }
+
+    .leftArrow,
+    .rightArrow {
+        position: absolute;
+        font-size: 2rem;
+        cursor: pointer;
+        padding: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: .6;
+        color: silver;
+    }
+
+    .leftArrow {
+        left: 0;
+    }
+
+    .rightArrow {
+        right: 0;
+    }
+    .carousel-group-index {
+        position: absolute;
+        top: 90%;
+        transform: translateY(-50%);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .carousel-index {
+            width: 5px;
+            height: 5px;
+            border: 2px solid silver;
+            ;
+            border-radius: 50%;
+            margin: 5px;
+            cursor: pointer;
+            opacity: .6;
+        }
+        .isActiveCarouselIndex {
+            background-color: silver;
+        
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .slider{
+        height: 180px;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    .slider{
+        height: 300px;
+    }
+
+}

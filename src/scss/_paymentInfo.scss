@@ -1,0 +1,115 @@
+.payment-container {
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.payment-form-container {
+    width: 100%;
+}
+
+.payment-information-form {
+    width: 95%;
+    margin: auto;
+}
+
+.payment-information-form h2 {
+
+    color: #383838;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.payment-information-form div {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.payment-information-form label {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #383838;
+}
+
+.payment-information-form-input {
+    height: 30px;
+    margin-top: 5px;
+    border: 1px solid #dddddd;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    outline: none;
+}
+
+.payment-input-error {
+    border: 1px solid red;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .payment-container {
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    /* PAYMENT INFORMATION */
+    .payment-form-container h2 {
+        text-align: center;
+        color: #353535;
+    }
+
+    .payment-information-form {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .payment-information-form div {
+        width: 45%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    .submit-payment-button {
+        width: 95%;
+        margin: 20px auto;
+        background-color: #846fc7;
+        color: #ffffff;
+        border: none;
+        padding: 15px 0;
+        cursor: pointer;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+}
+
+.div-paymentInfo-container {
+    .form-paymentInfo-container {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin: 20px auto 0 auto;
+
+        input {
+            height: 30px;
+            margin-top: 5px;
+            border: 1px solid #dddddd;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 400;
+            font-size: 1rem;
+            outline: none;
+        }
+    }
+}

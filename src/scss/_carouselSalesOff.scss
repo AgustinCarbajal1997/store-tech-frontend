@@ -1,0 +1,154 @@
+.sales-off-section{
+  background-color: white;
+  width: 95%;
+  margin: auto;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-x: hidden;
+  box-shadow: 0px 3px 5px 2px rgba(0,0,0,0.27);
+  .sales-off-section__title{
+    
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    h3 {
+      width: 100%;
+      margin: 0;
+      background-color: #470099;
+      background-image: linear-gradient(90deg, #470099 0%, #8c0099 46%, #d20199 100%);
+      color: whitesmoke;
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 7px 20px;
+      letter-spacing: 1px;
+    }
+  }
+  .sales-off-section__products{
+    display: flex;
+    position: relative;
+    transition: all .5s ease;
+    
+    .sales-off-section__card{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      text-decoration: none;
+      .sales-off-section__images{
+        width: 80%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .sales-off-section__imagesProduct{
+          width: 100%;
+          height: auto;
+        }
+        .sales-off-section__imagesShipping{
+          position: absolute;
+          width: 40%;
+          top: 0;
+          left: 0;
+        }
+        .sales-off-section__imagesPayment{
+          position: absolute;
+          width: 40%;
+          bottom: 0;
+          left: 0;
+        }
+      }
+      .sales-off-section__productName{
+        margin: 0;
+        padding: 5% 10% 5% 10%;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 400;
+        color: #383838;
+      }
+      .sales-off-section__discountContainer{
+        display: flex;
+        font-size: 1.2rem;
+        align-items: center;
+        font-weight: 300;
+        font-family: sans-serif;
+        :nth-child(1){
+          color: rgb(136, 136, 136);
+          text-decoration: line-through;
+          margin:0;
+        }
+        :nth-child(2){
+          background-color: #d93175;
+          border-radius: 2px;
+          color: #ffffff;
+          margin:0;
+          margin-left: 10px;
+          padding: 2px 4px;
+        }
+      }
+      .sales-off-section__productPrice{
+        padding: 5% 10% 0% 10%;
+        margin: 0;
+        font-size: 1.3rem;
+        color: #383838;
+      }
+      
+    }
+    
+    
+  }
+  .button-saleright{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-size: 2rem;
+    transform: translateY(-50%);
+    cursor: pointer; 
+    user-select: none;
+  }
+  .button-saleleft{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-size: 2rem;
+    transform: translateY(-50%);
+    cursor: pointer;  
+    user-select: none;
+  }
+
+}
+
+@media screen and (min-width: 768px){
+  .sales-off-section{
+    
+    .sales-off-section__title{
+      padding-left: 1%;
+      h3 {
+        width:auto;
+        margin: 0;
+        background-color: #470099;
+        background-image: linear-gradient(90deg, #470099 0%, #8c0099 46%, #d20199 100%);
+        color: whitesmoke;
+        font-size: 2rem;
+        font-weight: 600;
+        padding: 7px 20px;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
+
+
+
+
+
+

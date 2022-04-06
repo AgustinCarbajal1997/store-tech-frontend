@@ -1,0 +1,445 @@
+// CATEGORY PRODUCTS
+.category-products-container{
+    width: 95%;
+    margin: 30px auto;
+}
+
+
+
+.aside-form-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: fixed;
+    z-index: 99999999;
+    background-color: #ffffff;
+    padding-top: 40px;
+    top: 0;
+    // left: 0%;
+    transition: all 2s;
+    .filter-buton-aside{
+        width: 90%;
+        display: flex;
+        justify-content: flex-end;
+        button{
+            background-color: #654bb9;
+            color: #ffffff;
+            font-family: 'Work Sans', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 3px;
+            border: none;
+            padding:5px 10px ;
+        }
+    }
+    h3{
+        color: rgb(72, 72, 72);
+        padding-left: 20px;
+    }
+    h4{
+        font-size: 1rem;
+        font-weight: 400;
+        color: #585858;
+        margin: 0;
+        padding-left: 20px;
+        span{
+            color: rgb(72, 72, 72);
+            font-weight: 700;
+        }
+    }
+    form{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding-left: 20px;
+        label{
+            margin-top: 20px;
+            color: rgb(88, 88, 88);
+            font-size: .9rem;
+        }
+        .label-checkbox{
+            margin-top: 10px;
+        }
+        .brand-label{
+            color: rgb(72, 72, 72);
+            font-size: .9rem;
+            font-weight: 700;
+        }
+        .select{
+            background-color: transparent;
+            outline: none;
+            border: none;
+            text-align: center;
+            font-size: 1rem;
+            color: rgb(72, 72, 72);
+            font-weight: 700;
+            cursor: pointer;
+
+            option{
+                background-color: white;
+                font-size: 1rem;
+                font-weight: 700;
+                color: rgb(72, 72, 72);
+            }
+        }
+    }
+}
+.filter-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h4{
+        padding-left: 10px;
+        color: #654bb9;
+    }
+}
+
+
+// chekbox
+
+.b-contain *, .b-contain *::before, .b-contain *::after {
+	box-sizing: content-box !important;
+}
+
+.b-contain input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.b-contain span {
+	line-height: 1.54;
+	font-size: 1rem;
+	font-family: inherit;
+}
+
+.b-contain {
+	display: table;
+	position: relative;
+	padding-left: 1.8rem;
+	cursor: pointer;
+	margin-bottom: .5rem;
+}
+
+.b-contain input[type="checkbox"] ~ .b-input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 1.25rem;
+	width: 1.25rem;
+	background: #f5f5f5;
+	transition: background 250ms;
+	border: 1px solid rgba(184, 194, 204, 1);
+	border-radius: 0.125rem;
+    outline: none;
+}
+
+
+.b-contain input[type="checkbox"] ~ .b-input::after {
+	content: '';
+	position: absolute;
+	display: none;
+	left: .45rem;
+	top: .18rem;
+	width: .25rem;
+	height: .6rem;
+	border: solid rgba(255, 255, 255, 1);
+	border-width: 0 2px 2px 0;
+	transition: background 250ms;
+	transform: rotate(45deg);
+}
+
+
+
+.b-contain input:disabled ~ .b-input::after {
+	border-color: rgba(135, 149, 161, 1);
+}
+
+.b-contain input:checked ~ .b-input::after {
+	display: block;
+}
+
+.b-contain:hover input ~ .b-input,
+.b-contain input:focus ~ .b-input {
+	background: #f5f5f5;
+}
+
+
+.b-contain input:checked ~ .b-input {
+	background: #654bb9;
+	border-color: #654bb9;
+}
+
+.b-contain input[type="checkbox"]:disabled ~ .b-input {
+	background: rgba(241, 245, 248, 1);
+	border-color: rgba(184, 194, 204, 1);
+	opacity: 0.6;
+	cursor: not-allowed;
+}
+
+.button-comparison{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.artificial-checkbox{
+    width: 20px;
+    height: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid rgba(184, 194, 204, 1);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.tick{
+    background-color: #654bb9;
+}
+
+
+
+
+
+
+
+
+// LISTING PRODUCTS 
+
+.products-list {
+    width: 96%;
+    margin: auto;
+    background-color: whitesmoke;
+    display: grid;
+    position: relative;
+    justify-content: left;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 300px));
+    gap: 10px;
+    margin-bottom: 100px;
+}
+.comparison-bar-container{
+    position: fixed;
+    bottom: 0;
+    .comparison-bar-title{
+        background-color: #654bb9;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        div{
+            margin-right: 10px;
+            cursor: pointer;
+            
+            transition: all .3s;
+        }
+        h4{
+            margin: 0;
+            color: #ffffff;
+            font-size: .9rem;
+            padding: 9px 18px;
+            span{
+                background-color: #ffffff;
+                color: #654bb9;
+                border-radius: 50%;
+                font-size: 1rem;
+                border: 4px solid #ffffff;
+                padding: 0 5px;
+            }
+        }
+    }
+    .comparison-bar-fields{
+        width: 100%;
+        display: flex;
+        height: 130px;
+        background-color: #ffffff;
+        
+        .comparison-bar-fields-products{
+            width: 85%;
+            display: flex;
+            div{
+                width: 25%;
+                // height: 100%;
+                display: flex;
+                .comparison-bar-fields-products__img{
+                    width: 50%;
+                    height: auto;
+                    display: flex;
+                    justify-content: center;
+                    img{
+                        width: 95%;
+                        object-position: center;
+                        object-fit: contain;
+                    }
+                }
+                .comparison-bar-fields-products__data{
+                    width: 50%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    border-right: 1px solid #DADADA;
+                    h5{
+                        font-weight: 400;
+                        font-size: .8rem;
+                        margin: 0;
+                        padding-right: 3px;
+                    }
+                    h6{
+                        font-weight: 600;
+                        font-size: .8rem;
+                        margin: 0;
+                        padding-top: 6px;
+                    }
+                }
+
+            }
+        }
+        .comparison-bar-fields-buttons{
+            
+            width: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .comparison-bar-fields-buttons-compare{
+                background-color: #ffffff;
+                border: #441799 1px solid;
+                font-family: 'Work Sans', sans-serif;
+                font-weight: 600;
+                color: #441799;
+                padding: 5px 10px;
+                cursor: pointer;
+                text-decoration: none;
+                font-size: .9rem;
+            }
+            .comparison-bar-fields-buttons-delete{
+                background-color: #ffffff;
+                border: none;
+                font-family: 'Work Sans', sans-serif;
+                color: #005fff;
+                margin-top: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.products-list-item {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.products-list-item a {
+    text-decoration: none;
+}
+
+.products-list-item:hover {
+    box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.27);
+}
+
+.products-list-item__image {
+    width: 100%;
+
+}
+
+.products-list-item__title {
+    font-weight: 400;
+    text-align: center;
+    color: #424242;
+}
+
+.products-list-item__price {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #000000;
+}
+
+@media screen and (min-width: 768px){
+    .filter-button{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .category-products-container{
+        width: 95%;
+        display: grid;
+        grid-template-columns: 25% 75%;
+        margin: 0 auto;
+        .aside-form-container{
+            width: unset;
+            height: unset;
+            position: static;
+            background-color: unset;
+            padding-left: 0px;
+            padding-top: 0px;
+            .filter-buton-aside{
+                display: none;
+            }
+            h3{
+                color: rgb(72, 72, 72);
+                padding-left: 0;
+            }
+            h4{
+                font-size: 1rem;
+                font-weight: 400;
+                color: #585858;
+                margin: 0;
+                padding-left: 0;
+                span{
+                    color: rgb(72, 72, 72);
+                    font-weight: 700;
+                }
+            }
+            form{
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+                padding-left: 0;
+                label{
+                    margin-top: 20px;
+                    color: rgb(88, 88, 88);
+                    font-size: .9rem;
+                }
+                .label-checkbox{
+                    margin-top: 10px;
+                }
+                .brand-label{
+                    color: rgb(72, 72, 72);
+                    font-size: .9rem;
+                    font-weight: 700;
+                }
+                .select{
+                    background-color: transparent;
+                    outline: none;
+                    border: none;
+                    text-align: center;
+                    font-size: 1rem;
+                    color: rgb(72, 72, 72);
+                    font-weight: 700;
+                    cursor: pointer;
+        
+                    option{
+                        background-color: white;
+                        font-size: 1rem;
+                        font-weight: 700;
+                        color: rgb(72, 72, 72);
+                    }
+                }
+            }
+        }
+    }
+}
+

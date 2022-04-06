@@ -1,0 +1,18 @@
+.breadcrumb-container{
+    padding: 20px 0 0 0;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    div{    
+        display: flex;
+        align-items: center;
+        padding-left: 5px;
+        .breadcrumb-item{
+            text-decoration: none;
+            color: #4a4a4a;
+            font-size: .9rem;
+        }
+    }
+    
+}

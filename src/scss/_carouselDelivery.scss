@@ -1,0 +1,94 @@
+.weDeliverIt-section {
+    width: 95%;
+    margin: auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    user-select: none;
+    .weDeliverIt-item {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        background-color: white;
+        transition: all .2s ease;
+        cursor: pointer;
+        box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.08);
+        user-select: none;
+        .weDeliverIt-item__img {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            user-select: none;
+            img {
+                width: 90%;
+                height: auto;
+                user-select: none;
+            }
+        }
+    }
+    .weDeliverIt-item:hover {
+        box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.27);
+    }
+    .weDeliverIt-item__content {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        user-select: none;
+        img {
+            width: 25%;
+            user-select: none;
+        }
+    
+        h2 {
+            display: inline;
+            color: white;
+            padding: 5px;
+            font-size: 1.3rem;
+            user-select: none;
+        }
+    
+        button {
+            background-color: white;
+            border: 1px solid #440099;
+            padding: 15px;
+            cursor: pointer;
+            color: #440099;
+            transition: all ease .3s;
+        }
+    
+        button:hover {
+            background-color: #440099;
+            color: white;
+        }
+        
+    
+        .deliver1content h2 {
+            background-color: #ba1e92;
+        }
+    
+        .deliver2content h2 {
+            background-color: #654bb9;
+        }
+    }
+    .deliver1img {
+        background-image: linear-gradient(to right, #cf61b2 70%, white 30%);
+    }
+
+    .deliver2img {
+        background-image: linear-gradient(to right, #846fc7 70%, white 30%);
+    }
+
+}
+
+
+@media screen and (min-width: 1050px){
+    .weDeliverIt-section{
+        flex-direction: row;
+    }
+}
